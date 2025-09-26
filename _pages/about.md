@@ -17,9 +17,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 12 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Machine Learning Engineer | Generative AI Efficiency | Model Compression  
+Machine Learning Engineer \| Generative AI Efficiency \| Model Compression  
 
 
 
@@ -37,4 +37,6 @@ Machine Learning Engineer | Generative AI Efficiency | Model Compression
 
 **Academic Research (McGill University)**: I obtained a thesis-based Master of Science in Machine Learning, where my research was advised by Prof. Mathieu Blanchette, focussing on applying Reinforcement Learning techniques in Bioinformatics.
 
-**Software Development (Bharat Petroleum Corp Ltd, India)**: I began my career as a Software Developer, building a strong foundation in software engineering principles and practices after completing my bachelor's degree in India.
+**Passion Project**: My passion extends beyond inference to areas like LLM distributed training, reinforcement learning, kernel optimization and other low level op implementation.
+
+Beyond my work, I spend my leisure time playing badminton, ping pong, and passionately following Formula-1 and Manchester United FC.

@@ -14,3 +14,24 @@ NeurIPS:
   url: "https://nips.cc/"
   logo: NeurIPS_Logo.svg
   color: "#FFA500" # Changed to orange
+
+BIBE:
+  name: "Bioinformatics and Bioengineering"
+  abbr: BIBE
+  logo: bibe.png
+  color: "#28a745" # Changed to green
+
+ICIAR:
+  name: "International Conference on Image Analysis and Recognition"
+  abbr: ICIAR
+  color: "#DAA520"
+
+Masters Thesis:
+  name: "International Conference on Image Analysis and Recognition"
+  abbr: Masters Thesis
+  color: "#B22222"
+
+TinyML Symposium:
+  name: "TinyML Symposium"
+  abbr: TinyML Symposium
+  color: "#800080"
