@@ -3,21 +3,117 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@INPROCEEDINGS{RLALIGN,
+  abbr={BIBE},
+  author={Kinattinkara Ramakrishnan, Ramchalam and Singh, Jaspal and Blanchette, Mathieu},
+  booktitle={2018 IEEE 18th International Conference on Bioinformatics and Bioengineering (BIBE)}, 
+  title={RLALIGN: A Reinforcement Learning Approach for Multiple Sequence Alignment}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={61-66},
+  keywords={Games;Bioinformatics;Genomics;Training;Heuristic algorithms;Computer science;bioinformatics;machine learning;reinforcement learning;multiple sequence alignment},
+  PDF={10.1109/BIBE.2018.00019}
+  }
+
+@Article{quantization_study,
+      abbr={TinyML Symposium},
+      title={An Empirical Study of Low Precision Quantization for TinyML}, 
+      author={Shaojie Zhuo and Hongyu Chen and Ramchalam Kinattinkara Ramakrishnan and Tommy Chen and Chen Feng and Yicheng Lin and Parker Zhang and Liang Shen},
+      year={2022},
+      eprint={2203.05492},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      PDF={https://arxiv.org/abs/2203.05492}, 
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@Article{dmp_pruning,
+      abbr={arXiv},
+      title={Differentiable Mask for Pruning Convolutional and Recurrent Networks}, 
+      author={Ramchalam Kinattinkara Ramakrishnan and Eyyüb Sari and Vahid Partovi Nia},
+      year={2020},
+      eprint={1909.04567},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      PDF={https://arxiv.org/abs/1909.04567}, 
+}
+
+
+
+@inproceedings{ff,
+abbr={NeurIPS},
+ author = {Feng, Chen and Zhuo, Shaojie and Zhang, Xiaopeng and Ramakrishnan, Ramchalam Kinattinkara and Yuan, Zhaocong and Li, Andrew Zou},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {94851--94870},
+ publisher = {Curran Associates, Inc.},
+ title = {Stepping Forward on the Last Mile},
+ PDF = {https://proceedings.neurips.cc/paper_files/paper/2024/file/ac6c452efdf063644d330caba2ab1e57-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024},
+ venue = {NeurIPS},
+ selected = {true}
+}
+
+@inproceedings{omnidraft,
+      abbr={NeurIPS},
+      title={OmniDraft: A Cross-vocabulary, Online Adaptive Drafter for On-device Speculative Decoding}, 
+      author={Ramchalam Kinattinkara Ramakrishnan and Zhaocong Yuan and Shaojie Zhuo and Chen Feng and Yicheng Lin and Chenzheng Su and Xiaopeng Zhang},
+      booktitle = {Advances in Neural Information Processing Systems},
+      year={2025},
+      eprint={2507.02659},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      PDF={https://arxiv.org/abs/2507.02659}, 
+      ABSTRACT={Speculative decoding generally dictates having a small, efficient draft model that is either 
+      pretrained or distilled offline to a particular target model series, for instance, Llama or Qwen models. However, within online deployment settings, there are two major challenges: 
+      1) usage of a target model that is incompatible with the draft model; 2) expectation of latency improvements over usage and time. In this work, we propose OmniDraft, 
+      a unified framework that enables a single draft model to operate with any target model and adapt dynamically to user data. We introduce an online n-gram cache with hybrid 
+      distillation fine-tuning to address the cross-vocabulary mismatch across draft and target models; and further improve decoding speed by leveraging adaptive drafting techniques. 
+      OmniDraft is particularly suitable for on-device LLM applications where model cost, efficiency and user customization are the major points of contention. This further highlights 
+      the need to tackle the above challenges and motivates the \textit{``one drafter for all''} paradigm. We showcase the proficiency of the OmniDraft framework by performing online learning 
+      on math reasoning, coding and text generation tasks. Notably, OmniDraft enables a single Llama-68M model to pair with various target models including Vicuna-7B, Qwen2-7B and Llama3-8B models 
+      for speculative decoding; and additionally provides up to 1.5-2x speedup.},
+      venue = {NeurIPS},
+      selected = {true}
+}
+
+@misc{edgeASR,
+      abbr={arXiv},
+      title={Edge-ASR: Towards Low-Bit Quantization of Automatic Speech Recognition Models}, 
+      author={Chen Feng and Yicheng Lin and Shaojie Zhuo and Chenzheng Su and Ramchalam Kinattinkara Ramakrishnan and Zhaocong Yuan and Xiaopeng Zhang},
+      year={2025},
+      eprint={2507.07877},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      PDF={https://arxiv.org/abs/2507.07877}, 
+}
+
+@thesis{thesis,
+      abbr={Masters Thesis},
+      title={Exploring Reinforcement Learning Techniques in Multiple Sequence Alignment}, 
+      author={Ramchalam Kinattinkara Ramakrishnan},
+      year={2018},
+      url={https://escholarship.mcgill.ca/downloads/0c483m421}, 
+}
+
+@article{DBLP:journals/corr/abs-2006-05442,
+  abbr={arXiv},
+  author       = {Alejandro Murua and
+                  Ramchalam Ramakrishnan and
+                  Xinlin Li and
+                  Rui Heng Yang and
+                  Vahid Partovi Nia},
+  title        = {Tensor train decompositions on recurrent networks},
+  journal      = {CoRR},
+  volume       = {abs/2006.05442},
+  year         = {2020},
+  PDF          = {https://arxiv.org/abs/2006.05442},
+  eprinttype    = {arXiv},
+  eprint       = {2006.05442},
+  timestamp    = {Sat, 13 Jun 2020 18:28:13 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2006-05442.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 
 @article{einstein1950meaning,
@@ -33,33 +129,6 @@
   publisher={American Association of Physics Teachers}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
 
 @article{einstein1905molekularkinetischen,
   title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
@@ -102,14 +171,4 @@
   doi={10.1002/andp.19053220607},
   award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
   award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
 }

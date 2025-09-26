@@ -7,3 +7,10 @@
 
 "Vision":
   color: "#009f36"
+
+NeurIPS:
+  name: "Conference on Neural Information Processing Systems"
+  abbr: NeurIPS
+  url: "https://nips.cc/"
+  logo: NeurIPS_Logo.svg
+  color: "#FFA500" # Changed to orange

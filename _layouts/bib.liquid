@@ -15,6 +15,9 @@
               {{ venue_style }}
             {% endif -%}
           >
+            {% if site.data.venues[entry.abbr].logo %}
+            <img class="venue-logo" src="{{ '/assets/img/' | append: site.data.venues[entry.abbr].logo | relative_url }}" alt="{{ entry.abbr }} logo">
+            {% endif %}
             {% if site.data.venues[entry.abbr].url %}
               <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
             {% else %}
@@ -191,6 +194,15 @@
         <a class="award btn btn-sm z-depth-0" role="button">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
+      {% endif %}
+      {% if entry.status %}
+        {% if entry.status == 'Pending' %}
+            <span class="badge badge-pending badge-pill">{{ entry.status | capitalize }}</span>
+          {% elsif entry.status == 'Granted' %}
+            <span class="badge badge-granted badge-pill">{{ entry.status | capitalize }}</span>
+          {% else %}
+            <span class="badge badge-info badge-pill">{{ entry.status | capitalize }}</span> {# Default for other statuses #}
+          {% endif %}
       {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
