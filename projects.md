@@ -45,25 +45,45 @@ Comprehensive security assessments of web applications and internal networks to 
 
 ---
 
-## [3] AI-Powered Security Alert Automation
-**Status**: Active Research Project | **Started**: Nov 2025
+## [3] Azure Home Lab - Security Operations Environment
+**Duration**: Ongoing | **Type**: Hands-on Learning Environment
 
-Researching and developing an AI-powered solution to automate Microsoft Defender security alerts, reducing manual triage time and improving incident response efficiency.
+Building a comprehensive Azure-based home lab to practice security operations, incident response, and cloud security configurations in a realistic enterprise environment.
 
-### Research Areas
-- Machine learning models for security alert classification
-- Natural language processing for threat intelligence extraction
-- Anomaly detection techniques for false positive reduction
-- Microsoft Defender API integration
+### Lab Components
+- Active Directory integration with Azure AD (Entra ID)
+- Microsoft Defender for Endpoint deployment
+- Security monitoring with Microsoft Sentinel
+- Network security groups and firewall configurations
+- Role-based access control (RBAC) implementation
 
-### Planned Components
-- Automated alert triage and classification
-- Threat intelligence enhancement
-- AI-driven response recommendation engine
+### Skills Developed
+- Cloud security architecture and design
+- Security information and event management (SIEM)
+- Incident detection and response workflows
+- Azure security best practices
 
-**Technologies**: Python, TensorFlow/PyTorch, Microsoft Graph Security API, Microsoft 365 Defender API
+**Technologies**: Microsoft Azure, Azure AD, Microsoft Defender, Microsoft Sentinel, Azure Security Center
 
-[Read more →](/projects/ai-security-automation)
+---
+
+## [4] AI in Cybersecurity - Learning Journey
+**Status**: Exploring \u0026 Learning | **Started**: Nov 2025
+
+Currently exploring how artificial intelligence and machine learning can be applied to cybersecurity challenges. Learning the fundamentals of AI/ML and investigating potential applications in security alert automation and threat detection.
+
+### Learning Focus
+- Python programming for AI/ML applications
+- Machine learning fundamentals
+- Security use cases for AI (alert triage, anomaly detection)
+- Microsoft Defender API exploration
+
+### Future Goals
+- Build practical AI-based security tools
+- Implement automated alert classification
+- Develop threat intelligence enhancement capabilities
+
+**Technologies**: Python, TensorFlow basics, Microsoft Graph Security API
 
 ---
 
