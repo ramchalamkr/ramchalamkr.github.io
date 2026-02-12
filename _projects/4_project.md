@@ -1,80 +1,89 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Windows Server & Active Directory Lab
+description: Enterprise infrastructure deployment on Azure Cloud
+importance: 4
+category: homelab
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Project Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Completion:** Dec 2025  
+**Platform:** Microsoft Azure Cloud  
+**Focus:** Windows Server administration and Active Directory implementation
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Objectives
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Build a comprehensive enterprise-grade Windows Server and Active Directory environment in the cloud to gain hands-on experience with enterprise infrastructure management and security best practices.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Implementation Details
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### Infrastructure Deployment
+- Deployed Windows Server 2022 Datacenter virtual machine on Microsoft Azure
+- Configured network settings, storage, and compute resources
+- Implemented proper VM sizing and resource allocation
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Active Directory Domain Services (AD DS)
+- Installed Active Directory Domain Services role
+- Promoted server to Domain Controller
+- Configured domain functional levels and forest structure
+- Established DNS integration for domain services
 
-{% raw %}
+### Organizational Structure
+- Created hierarchical Organizational Units (OUs) based on business functions
+- Structured OUs following enterprise best practices
+- Implemented logical grouping for users, computers, and groups
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+### User & Group Management
+- Created user accounts with appropriate naming conventions
+- Established security groups for role-based access control
+- Configured group nesting and delegation principles
+- Implemented least-privilege access model
 
-{% endraw %}
+### Group Policy Configuration
+- Configured Group Policy Objects (GPOs) for security hardening
+- Implemented password complexity requirements and account lockout policies
+- Created software restriction policies to prevent unauthorized applications
+- Applied GPOs at appropriate OU levels for granular control
+
+### Security Implementation
+- Followed least-privilege principles throughout configuration
+- Implemented security baseline configurations
+- Configured audit policies for monitoring and compliance
+- Established administrative delegation where appropriate
+
+## Documentation & Validation
+
+- Created comprehensive documentation of entire setup process
+- Captured validation screenshots for each configuration step
+- Documented troubleshooting steps and lessons learned
+- Created diagrams of AD structure and GPO application
+
+## Technologies Used
+
+- **Platform:** Microsoft Azure
+- **Operating System:** Windows Server 2022 Datacenter
+- **Services:** Active Directory Domain Services (AD DS)
+- **Tools:** Group Policy Management Console, Active Directory Users and Computers
+- **Protocols:** DNS, LDAP, Kerberos
+
+## Key Learnings
+
+- Hands-on experience with Windows Server administration
+- Understanding of Active Directory architecture and best practices
+- Practical implementation of Group Policy for security hardening
+- Cloud infrastructure deployment and management
+- Documentation and validation procedures
+
+## Skills Demonstrated
+
+- Windows Server 2022 administration
+- Active Directory deployment and configuration
+- Group Policy Object (GPO) management
+- Security baseline implementation
+- Azure cloud infrastructure
+- Technical documentation
+
+---
+
+*This home lab project demonstrates practical enterprise infrastructure skills and cloud platform proficiency, providing a foundation for real-world Windows Server and Active Directory administration.*

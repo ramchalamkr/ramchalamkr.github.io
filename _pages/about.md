@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: ML Research @Qualcomm AI Research | MSc @McGill University
+subtitle: SOC Analyst | Cybersecurity Enthusiast
 
 profile:
   align: right
@@ -13,7 +13,8 @@ profile:
   #   # <p>123 your address street</p>
   #   # <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+
+# selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -27,16 +28,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Machine Learning Engineer \| Generative AI Efficiency \| Model Compression  
+Open to Roles in Canada | SOC Analyst | Threat Hunter | VAPT | Leading Cyber Ladies | SC-200 | CompTIA Security+ | ISC² CC | Cyber Security Operations Grad | CTF Player | Exploring AI | ISC2 Toronto Chapter volunteer
 
 
 
-**Generative AI Efficiency (Qualcomm AI Research)**: My current work focuses on creating efficient solutions for Large and Small Language Models (LLMs/SLMs), multimodal foundation models, diffusion large language models (dLLMs) and other advanced LLM inference techniques like speculative decoding, accelerating on-device training.
+**Teaching Assistant - Cybersecurity (York University)**: Supporting course delivery for Cybersecurity Operations, facilitating discussions, evaluating student participation, and providing feedback. Collaborating with students on capstone projects, including researching and vetting potential vendors while fostering engagement and ensuring a positive learning experience.
 
-**Model Compression (Huawei Noah's Ark Lab)**: At Noah's Ark Lab, Montreal, my work entailed developing and implementing neural network model compression techniques to improve computational performance (quantization, pruning, NAS across conv and transformer based architectures).
+**Security Operations Center Analyst (Kryptos Technologies)**: Specialized in threat detection, incident response, and security monitoring. Experienced in analyzing security alerts, investigating incidents, and implementing security measures to protect organizational assets from cyber threats.
 
-**Academic Research (McGill University)**: I obtained a thesis-based Master of Science in Machine Learning, where my research was advised by Prof. Mathieu Blanchette, focussing on applying Reinforcement Learning techniques in Bioinformatics.
+**Associate Consultant - SAP Security (Capgemini Technology Services)**: Managed enterprise security operations for SAP systems, including user provisioning for 1000+ employees, authorization management, and security audits for system migrations. Conducted security reviews for cloud transitions and SAP upgrades for 5000+ users, ensuring data security and regulatory compliance.
 
-**Passion Project**: My passion extends beyond inference to areas like LLM distributed training, reinforcement learning, kernel optimization and other low level op implementation.
+**Cybersecurity Operations Graduate (York University)**: Completed comprehensive training in cybersecurity operations, threat hunting, vulnerability assessment, and penetration testing. Developed strong foundations in defensive and offensive security practices.
 
-Beyond my work, I spend my leisure time playing badminton, ping pong, and passionately following Formula-1 and Manchester United FC.
+**Professional Certifications**: Achieved industry-recognized certifications including Microsoft SC-200 (Security Operations Analyst), CompTIA Security+, and ISC² Certified in Cybersecurity (CC), demonstrating expertise in security operations and best practices.
+
+**Community & Research**: Active volunteer with ISC2 Toronto Chapter and leading member of Cyber Ladies. Passionate about exploring AI applications in cybersecurity, participating in CTF competitions, and contributing to the cybersecurity community through knowledge sharing and mentorship.
+
+Beyond my cybersecurity work, I enjoy staying active and engaged through various hobbies and interests.
