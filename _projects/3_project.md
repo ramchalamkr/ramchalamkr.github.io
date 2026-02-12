@@ -14,7 +14,7 @@ category: research
 
 ## Project Goal
 
-Researching and developing an AI-powered solution to automate Microsoft Defender security alerts, reducing manual triage time and improving incident response efficiency.
+<!--Researching and developing an AI-powered solution to automate Microsoft Defender security alerts, reducing manual triage time and improving incident response efficiency.
 
 ## Research Areas
 

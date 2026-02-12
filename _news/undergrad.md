@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated from Model Engineering College, Thrikkakara, India (CUSAT), B-Tech in CSE
+Graduated from Bharathiar University, Coimbatore, India, Bachelors in Science, Computer Science
