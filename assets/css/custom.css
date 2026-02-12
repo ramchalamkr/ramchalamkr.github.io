@@ -1,18 +1,18 @@
-/*  Custom enhancements for terminal aesthetic */
+/*  Terminal aesthetic - Light theme with dark mode support */
 
-/* CRITICAL: Base colors for readability */
+/* Light Mode (Default) */
 body {
-    color: #e0e0e0 !important;
-    /* Light gray text */
-    background-color: #000 !important;
-    font-family: 'Courier New', Courier, monospace !important;
+    background-color: #ffffff !important;
+    color: #2e3440 !important;
+    font-family: 'Courier New', Courier, 'Monaco', monospace !important;
+    line-height: 1.6;
 }
 
 p,
 li,
 div,
 span {
-    color: #d0d0d0 !important;
+    color: #2e3440 !important;
 }
 
 h1,
@@ -21,53 +21,42 @@ h3,
 h4,
 h5,
 h6 {
-    color: #ffffff !important;
-}
-
-/* Add outer glow effect like bhavsec.com */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    background: radial-gradient(ellipse at center,
-            rgba(76, 0, 130, 0.15) 0%,
-            /* Purple glow in center */
-            rgba(25, 25, 112, 0.25) 30%,
-            /* Midnight blue */
-            rgba(0, 0, 0, 0.9) 70%,
-            /* Dark edges */
-            rgba(0, 0, 0, 1) 100%
-            /* Pure black */
-        );
-}
-
-/* Add inner shadow/vignette for depth */
-.container,
-main {
-    box-shadow: inset 0 0 100px rgba(76, 0, 130, 0.3);
-}
-
-/* Colorful terminal prompt styling */
-.logo .prompt {
-    color: #00ff00 !important;
-    /* Bright green for > symbol */
-}
-
-.logo .filename {
-    color: #ff6b6b !important;
-    /* Bright red for filename */
+    color: #1a1a1a !important;
     font-weight: bold;
 }
 
-/* Blinking cursor animation */
-.cursor {
-    color: #00ff00;
+a {
+    color: #0066cc !important;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004080 !important;
+    text-decoration: underline;
+}
+
+/* Terminal prompt colors for light mode */
+.term-prompt {
+    color: #008000 !important;
+    /* Green */
+    font-weight: bold;
+}
+
+.term-path {
+    color: #008000 !important;
+    /* Green */
+}
+
+.term-filename {
+    color: #cc0000 !important;
+    /* Red */
+    font-weight: bold;
+}
+
+.term-cursor {
+    color: #008000 !important;
     animation: blink 1s step-end infinite;
+    font-weight: bold;
 }
 
 @keyframes blink {
@@ -76,67 +65,90 @@ main {
     }
 }
 
-/* Enhanced link colors */
-a {
-    color: #61dafb !important;
-    /* Cyan blue */
-    transition: color 0.3s ease;
+/* Dark Mode (Auto-switches based on system preference) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a !important;
+        color: #e0e0e0 !important;
+    }
+
+    p,
+    li,
+    div,
+    span {
+        color: #d0d0d0 !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #ffffff !important;
+    }
+
+    a {
+        color: #61dafb !important;
+    }
+
+    a:hover {
+        color: #00ff00 !important;
+        text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+    }
+
+    /* Terminal prompts for dark mode */
+    .term-prompt {
+        color: #00ff00 !important;
+        /* Bright green */
+    }
+
+    .term-path {
+        color: #00ff00 !important;
+    }
+
+    .term-filename {
+        color: #ff6b6b !important;
+        /* Bright red */
+    }
+
+    .term-cursor {
+        color: #00ff00 !important;
+    }
+
+    /* Dark mode glow effect */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+        background: radial-gradient(ellipse at center,
+                rgba(76, 0, 130, 0.15) 0%,
+                rgba(25, 25, 112, 0.25) 30%,
+                rgba(0, 0, 0, 0.9) 70%,
+                rgba(0, 0, 0, 1) 100%);
+    }
 }
 
-a:hover {
-    color: #00ff00 !important;
-    /* Green on hover */
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-}
-
-/* Add subtle glow to headers */
-h1,
-h2,
-h3 {
-    text-shadow: 0 0 20px rgba(97, 218, 251, 0.3);
-}
-
-/* Code blocks with slight glow */
+/* Code blocks */
 code,
 pre {
-    background-color: rgba(76, 0, 130, 0.1) !important;
-    border: 1px solid rgba(97, 218, 251, 0.2);
-    box-shadow: 0 0 10px rgba(76, 0, 130, 0.2);
+    font-family: 'Courier New', Courier, monospace !important;
+    background-color: #f5f5f5 !important;
+    border: 1px solid #e0e0e0;
+    padding: 2px 5px;
+    border-radius: 3px;
 }
 
-/* Emoji should maintain color */
-.emoji {
-    filter: none !important;
-}
+@media (prefers-color-scheme: dark) {
 
-/* Terminal prompt color classes (replaces inline styles) */
-.term-prompt {
-    color: #00ff00 !important;
-    /* Bright green for > */
-    font-weight: bold;
-}
-
-.term-path {
-    color: #00ff00 !important;
-    /* Green for ~ */
-}
-
-.term-filename {
-    color: #ff6b6b !important;
-    /* Bright red for filename */
-    font-weight: bold;
-}
-
-.term-cursor {
-    color: #00ff00 !important;
-    animation: blink 1s step-end infinite;
-    font-weight: bold;
-}
-
-/* Make prompt symbols more visible */
-h1 .term-prompt,
-h1 .term-path,
-h1 .term-filename,
-h1 .term-cursor {
-    font-size: inherit;
+    code,
+    pre {
+        background-color: rgba(76, 0, 130, 0.1) !important;
+        border: 1px solid rgba(97, 218, 251, 0.2);
+    }
 }
