@@ -34,7 +34,8 @@ I've always believed career twists lead to the right path. After SAP techno-func
 
 I leverage Microsoft Intune/Defender for endpoint security, craft policies, analyze phishing, and blend SAP user management expertise with threat hunting.
 
-Outside work, I volunteer with ISC2 Toronto Chapter, lead Leading Cyber Ladies, and serve as Program Director at Ilaiya Thalaimurai—designing crash courses and mentoring students while exploring AI in cybersecurity. Let's connect on cybersecurity trends and career navigation on LinkedIn!
+Outside work, I volunteer with ISC2 Toronto Chapter, lead Leading Cyber Ladies, and serve as Program Director at Ilaiya Thalaimurai—designing crash courses and mentoring students while exploring AI in cybersecurity. Let's connect on cybersecurity trends and career navigation on [LinkedIn](https://www.linkedin.com/in/gayathri-rajamohan/).
+
 
 **Teaching Assistant - Cybersecurity (York University)**: Supporting course delivery for Cybersecurity Operations, facilitating discussions, evaluating student participation, and providing feedback. Collaborating with students on capstone projects, including researching and vetting potential vendors while fostering engagement and ensuring a positive learning experience.
 
