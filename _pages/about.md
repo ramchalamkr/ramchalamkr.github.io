@@ -28,9 +28,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Open to Roles in Canada | SOC Analyst | Threat Hunter | VAPT | Leading Cyber Ladies | SC-200 | CompTIA Security+ | ISC² CC | Cyber Security Operations Grad | CTF Player | Exploring AI | ISC2 Toronto Chapter volunteer
+Incident Response | Malware Detection | Security Monitoring | Microsoft Defender | Endpoint Detection | Security Policy Development | Threat Hunting | VAPT
 
+I've always believed career twists lead to the right path. After SAP techno-functional consulting, I found my passion in cybersecurity as a SOC Analyst at Kryptos Technologies—thriving on threat monitoring and incident response (Best Employee of the Month award).
 
+I leverage Microsoft Intune/Defender for endpoint security, craft policies, analyze phishing, and blend SAP user management expertise with threat hunting.
+
+Outside work, I volunteer with ISC2 Toronto Chapter, lead Leading Cyber Ladies, and serve as Program Director at Ilaiya Thalaimurai—designing crash courses and mentoring students while exploring AI in cybersecurity. Let's connect on cybersecurity trends and career navigation on LinkedIn!
 
 **Teaching Assistant - Cybersecurity (York University)**: Supporting course delivery for Cybersecurity Operations, facilitating discussions, evaluating student participation, and providing feedback. Collaborating with students on capstone projects, including researching and vetting potential vendors while fostering engagement and ensuring a positive learning experience.
 
