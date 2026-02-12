@@ -14,7 +14,8 @@ url: https://defendwithgr.github.io
 # Theme Configuration
 # -----------------------------------------------------------------------------
 
-theme: jekyll-theme-console
+# theme: jekyll-theme-console  # Not supported on GitHub Pages
+theme: jekyll-theme-minimal
 style: dark  # dark (default), light, hacker, or nord
 listen_for_clients_preferred_style: false
 
