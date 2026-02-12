@@ -1,5 +1,29 @@
 /*  Custom enhancements for terminal aesthetic */
 
+/* CRITICAL: Base colors for readability */
+body {
+    color: #e0e0e0 !important;
+    /* Light gray text */
+    background-color: #000 !important;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+p,
+li,
+div,
+span {
+    color: #d0d0d0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff !important;
+}
+
 /* Add outer glow effect like bhavsec.com */
 body::before {
     content: "";
