@@ -1,0 +1,118 @@
+/*  Custom enhancements for terminal aesthetic */
+
+/* Add outer glow effect like bhavsec.com */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: radial-gradient(ellipse at center,
+            rgba(76, 0, 130, 0.15) 0%,
+            /* Purple glow in center */
+            rgba(25, 25, 112, 0.25) 30%,
+            /* Midnight blue */
+            rgba(0, 0, 0, 0.9) 70%,
+            /* Dark edges */
+            rgba(0, 0, 0, 1) 100%
+            /* Pure black */
+        );
+}
+
+/* Add inner shadow/vignette for depth */
+.container,
+main {
+    box-shadow: inset 0 0 100px rgba(76, 0, 130, 0.3);
+}
+
+/* Colorful terminal prompt styling */
+.logo .prompt {
+    color: #00ff00 !important;
+    /* Bright green for > symbol */
+}
+
+.logo .filename {
+    color: #ff6b6b !important;
+    /* Bright red for filename */
+    font-weight: bold;
+}
+
+/* Blinking cursor animation */
+.cursor {
+    color: #00ff00;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Enhanced link colors */
+a {
+    color: #61dafb !important;
+    /* Cyan blue */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00ff00 !important;
+    /* Green on hover */
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Add subtle glow to headers */
+h1,
+h2,
+h3 {
+    text-shadow: 0 0 20px rgba(97, 218, 251, 0.3);
+}
+
+/* Code blocks with slight glow */
+code,
+pre {
+    background-color: rgba(76, 0, 130, 0.1) !important;
+    border: 1px solid rgba(97, 218, 251, 0.2);
+    box-shadow: 0 0 10px rgba(76, 0, 130, 0.2);
+}
+
+/* Emoji should maintain color */
+.emoji {
+    filter: none !important;
+}
+
+/* Terminal prompt color classes (replaces inline styles) */
+.term-prompt {
+    color: #00ff00 !important;
+    /* Bright green for > */
+    font-weight: bold;
+}
+
+.term-path {
+    color: #00ff00 !important;
+    /* Green for ~ */
+}
+
+.term-filename {
+    color: #ff6b6b !important;
+    /* Bright red for filename */
+    font-weight: bold;
+}
+
+.term-cursor {
+    color: #00ff00 !important;
+    animation: blink 1s step-end infinite;
+    font-weight: bold;
+}
+
+/* Make prompt symbols more visible */
+h1 .term-prompt,
+h1 .term-path,
+h1 .term-filename,
+h1 .term-cursor {
+    font-size: inherit;
+}
