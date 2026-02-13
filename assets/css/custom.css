@@ -1,0 +1,357 @@
+/* Enhanced Terminal Aesthetic - Modern & Professional */
+
+/* ============================================
+   BASE STYLES - Light Mode Default
+   ============================================ */
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    color: #2b2d42 !important;
+    font-family: 'Monaco', 'Menlo', 'Courier New', monospace !important;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* Better text readability */
+p,
+li,
+div,
+span {
+    color: #2b2d42 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1a1d35 !important;
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-size: 2.2em;
+    border-bottom: 3px solid #00d9ff;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #06ffa5;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #06ffa5 !important;
+}
+
+/* ============================================
+   LINKS - Modern with smooth transitions
+   ============================================ */
+a {
+    color: #0066ff !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: #00d9ff !important;
+    border-bottom: 1px solid #00d9ff;
+    transform: translateY(-1px);
+}
+
+/* ============================================
+   TERMINAL STYLING - Colorful prompts
+   ============================================ */
+.term-prompt {
+    color: #06ffa5 !important;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(6, 255, 165, 0.3);
+}
+
+.term-path {
+    color: #00d9ff !important;
+    font-weight: 600;
+}
+
+.term-filename {
+    color: #ff006e !important;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 0, 110, 0.2);
+}
+
+.term-cursor {
+    color: #06ffa5 !important;
+    animation: blink 1s step-end infinite;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(6, 255, 165, 0.5);
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   NAVIGATION - Enhanced header
+   ============================================ */
+header {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #00d9ff;
+}
+
+nav a {
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #00d9ff20, #06ffa520);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   CONTENT CARDS - Modern project sections
+   ============================================ */
+main h2 {
+    background: linear-gradient(135deg, #00d9ff15, #06ffa515);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #00d9ff;
+    margin: 30px 0 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 217, 255, 0.1);
+}
+
+/* Project/section containers */
+main>hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00d9ff, transparent);
+    margin: 40px 0;
+}
+
+/* ============================================
+   CODE BLOCKS - Enhanced terminal look
+   ============================================ */
+code,
+pre {
+    font-family: 'Monaco', 'Menlo', 'Courier New', monospace !important;
+    background: linear-gradient(135deg, #f0f0f0, #e8e8e8) !important;
+    border: 1px solid #d0d0d0;
+    border-left: 3px solid #00d9ff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+pre {
+    padding: 15px !important;
+    overflow-x: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ============================================
+   LISTS - Better spacing and bullets
+   ============================================ */
+ul,
+ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+li::marker {
+    color: #00d9ff !important;
+    font-weight: bold;
+}
+
+/* ============================================
+   UTILITY STYLES
+   ============================================ */
+strong,
+b {
+    color: #1a1d35 !important;
+    font-weight: 700;
+}
+
+em,
+i {
+    color: #ff006e !important;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00d9ff50, transparent);
+    margin: 30px 0;
+}
+
+/* ============================================
+   DARK MODE - Cyberpunk aesthetic
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #0a0e27 !important;
+        color: #e0e6ed !important;
+        position: relative;
+    }
+
+    /* Cyberpunk glow effect */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+        background:
+            radial-gradient(ellipse at top, rgba(0, 217, 255, 0.15), transparent 50%),
+            radial-gradient(ellipse at bottom right, rgba(255, 0, 110, 0.1), transparent 50%),
+            radial-gradient(ellipse at bottom left, rgba(6, 255, 165, 0.1), transparent 50%);
+    }
+
+    p,
+    li,
+    div,
+    span {
+        color: #d0d6e0 !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #ffffff !important;
+    }
+
+    h1 {
+        border-bottom-color: #00d9ff;
+        text-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+    }
+
+    h2 {
+        border-bottom-color: #06ffa5;
+        text-shadow: 0 0 15px rgba(6, 255, 165, 0.2);
+    }
+
+    h3 {
+        color: #06ffa5 !important;
+        text-shadow: 0 0 10px rgba(6, 255, 165, 0.3);
+    }
+
+    /* Dark mode links */
+    a {
+        color: #00d9ff !important;
+    }
+
+    a:hover {
+        color: #06ffa5 !important;
+        text-shadow: 0 0 10px rgba(6, 255, 165, 0.4);
+        border-bottom-color: #06ffa5;
+    }
+
+    /* Enhanced navigation for dark mode */
+    header {
+        background: rgba(10, 14, 39, 0.9) !important;
+        border-bottom-color: #00d9ff;
+        box-shadow: 0 2px 20px rgba(0, 217, 255, 0.2);
+    }
+
+    nav a:hover {
+        background: linear-gradient(135deg, #00d9ff30, #06ffa530);
+        box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+    }
+
+    /* Dark mode cards */
+    main h2 {
+        background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(6, 255, 165, 0.05));
+        border-left-color: #00d9ff;
+        box-shadow: 0 2px 15px rgba(0, 217, 255, 0.2);
+    }
+
+    /* Dark mode code blocks */
+    code,
+    pre {
+        background: rgba(0, 217, 255, 0.05) !important;
+        border-color: rgba(0, 217, 255, 0.3);
+        box-shadow: 0 0 10px rgba(0, 217, 255, 0.1);
+    }
+
+    /* Dark mode list markers */
+    li::marker {
+        color: #00d9ff !important;
+    }
+
+    strong,
+    b {
+        color: #ffffff !important;
+    }
+
+    em,
+    i {
+        color: #ff006e !important;
+    }
+
+    hr {
+        background: linear-gradient(90deg, transparent, #00d9ff80, transparent);
+        box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+    }
+}
+
+/* ============================================
+   ANIMATIONS - Smooth page entrance
+   ============================================ */
+main {
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   RESPONSIVE - Mobile optimization
+   ============================================ */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
