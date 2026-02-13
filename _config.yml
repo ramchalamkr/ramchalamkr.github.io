@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: defendwithgr
+title: Gayathri Rajamohan
 first_name: Gayathri
 last_name: Rajamohan
 description: >
@@ -28,7 +28,6 @@ header_pages:
   - whoami.md
   - projects.md
   - blog.md
-  - resume.md
 
 # -----------------------------------------------------------------------------
 # Footer

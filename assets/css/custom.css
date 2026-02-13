@@ -50,6 +50,47 @@ h3 {
 }
 
 /* ============================================
+   HORIZONTAL NAVIGATION - Site Header
+   ============================================ */
+
+/* Site title/name */
+.site-header .site-title {
+    font-size: 1.5em !important;
+    font-weight: 700 !important;
+    color: #1a1d35 !important;
+    margin: 0 !important;
+    padding: 15px 0 10px 0 !important;
+    border-bottom: 2px solid #00d9ff !important;
+}
+
+/* Navigation container */
+.site-header .site-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    padding: 10px 0 !important;
+    margin: 0 !important;
+}
+
+/* Navigation links */
+.site-header .site-nav a {
+    display: inline-block !important;
+    padding: 5px 15px !important;
+    margin: 0 !important;
+    font-size: 1em !important;
+    font-weight: 600 !important;
+    color: #2b2d42 !important;
+    border-radius: 5px !important;
+    transition: all 0.3s ease !important;
+}
+
+.site-header .site-nav a:hover {
+    background: linear-gradient(135deg, #00d9ff20, #06ffa520) !important;
+    transform: translateY(-2px) !important;
+    color: #00d9ff !important;
+}
+
+/* ============================================
    LINKS - Modern with smooth transitions
    ============================================ */
 a {
