@@ -20,12 +20,10 @@
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{$white-color};
   --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
+  --global-back-to-top-bg-color: rgba(#{color.channel($black-color, "red", $space: rgb)},
     #{color.channel($black-color, "green", $space: rgb)},
     #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
+    0.4);
   --global-back-to-top-text-color: #{$white-color};
   --global-newsletter-bg-color: #{$white-color};
   --global-newsletter-text-color: #{$black-color};
@@ -91,12 +89,10 @@ html[data-theme="dark"] {
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($white-color, "red", $space: rgb)},
+  --global-back-to-top-bg-color: rgba(#{color.channel($white-color, "red", $space: rgb)},
     #{color.channel($white-color, "green", $space: rgb)},
     #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
-  );
+    0.5);
   --global-back-to-top-text-color: #{$black-color};
   --global-newsletter-bg-color: #{$grey-color-light};
   --global-newsletter-text-color: #{$grey-color-dark};
@@ -158,4 +154,46 @@ html[data-theme-setting="light"] {
     padding-top: 12px;
     display: block;
   }
+}
+
+// Fix for code block readability in dark mode
+html[data-theme="dark"] {
+  pre.highlight {
+    color: #e6edf3 !important; // Light grey text for readability
+    background-color: #0d1117 !important; // Darker background for better contrast
+  }
+
+  // Special styling for text blocks (non-code examples)
+  pre.highlight.language-text,
+  pre.highlight.language-plaintext {
+    color: #7ee2d4 !important; // Teal accent for text blocks
+    background-color: #0d1117 !important;
+    font-weight: 600 !important; // Bold for better emphasis
+  }
+
+  code {
+    color: #e6edf3 !important;
+    background-color: #161b22 !important;
+  }
+}
+
+// Improve blog post readability with better spacing
+.post {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+
+  p,
+  li {
+    line-height: 1.8 !important; // More spacing between lines
+  }
+
+  pre {
+    padding: 1.5rem !important; // More padding in code blocks
+    margin: 1.5rem 0 !important;
+  }
+}
+
+// Add more space between main content and TOC sidebar
+#toc-sidebar {
+  margin-left: 3rem !important;
 }
