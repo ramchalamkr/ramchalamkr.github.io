@@ -1,6 +1,7 @@
 ---
 layout: post
 title: NCCL Primitives Deep Dive
+date: 2026-02-15 00:01:00 -0500
 description: Understanding All-Gather, Ring All-Reduce, and All-to-All communication primitives in LLMs
 tags: distributed-training NCCL LLM MoE communication
 categories: technical-deep-dive
