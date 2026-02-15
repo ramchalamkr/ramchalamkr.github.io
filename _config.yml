@@ -160,6 +160,7 @@ collections:
 # Markdown and syntax highlight
 markdown: kramdown
 highlighter: rouge
+future: true  # Allow posts with future dates (like 2026)
 kramdown:
   input: GFM
   syntax_highlighter_opts:
