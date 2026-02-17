@@ -93,7 +93,6 @@ def computational_formula_variance(data):
 
 **Cons:**
 - ❌ **Numerically unstable** when `variance << mean²`
-- ❌ Subtracts large numbers
 - ❌ Fails with FP16/FP8
 
 **When to use:** Never in production!
@@ -219,7 +218,7 @@ One load     Two loops      Computations
 
 
 
-### Case 2: Multiple Blocks, Parallel Processing (Where Welford Shines!) 
+### Case 2: Multiple Blocks, Parallel Processing
 **Key point**: Even in sequential processing, each block sequentially, it is still useful to use Welford - similar to flash attention approach.
 
 **Welford IS needed!** ✅
