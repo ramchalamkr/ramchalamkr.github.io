@@ -14,8 +14,9 @@ url: https://defendwithgr.github.io
 # Theme Configuration
 # -----------------------------------------------------------------------------
 
-# theme: jekyll-theme-console  # Not supported on GitHub Pages
-remote_theme: b2a3e8/jekyll-theme-console
+remote_theme: b2a3e8/jekyll-theme-console  # Used by GitHub Pages
+# For local builds when network is unavailable, comment remote_theme and uncomment:
+theme: jekyll-theme-console
 style: light  # default to light mode
 listen_for_clients_preferred_style: true  # Auto-switch based on system preference
 

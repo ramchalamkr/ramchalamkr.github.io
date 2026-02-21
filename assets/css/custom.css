@@ -53,41 +53,67 @@ h3 {
    HORIZONTAL NAVIGATION - Site Header
    ============================================ */
 
-/* Site title/name */
-.site-header .site-title {
-    font-size: 1.5em !important;
-    font-weight: 700 !important;
-    color: #1a1d35 !important;
-    margin: 0 !important;
-    padding: 15px 0 10px 0 !important;
-    border-bottom: 2px solid #00d9ff !important;
-}
-
-/* Navigation container */
-.site-header .site-nav {
+/* Nav menu container — make it horizontal */
+.menu ul {
     display: flex !important;
     flex-direction: row !important;
-    gap: 20px !important;
-    padding: 10px 0 !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+    list-style: none !important;
     margin: 0 !important;
+    padding: 8px 0 !important;
 }
 
-/* Navigation links */
-.site-header .site-nav a {
-    display: inline-block !important;
-    padding: 5px 15px !important;
+.menu ul li {
     margin: 0 !important;
-    font-size: 1em !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Separator between nav items */
+.menu ul li+li::before {
+    content: "|" !important;
+    color: #00d9ff !important;
+    opacity: 0.5;
+    padding-right: 4px !important;
+    font-weight: 300 !important;
+}
+
+/* All nav links */
+.menu ul li a {
+    display: inline-block !important;
+    padding: 4px 12px !important;
+    font-size: 0.95em !important;
     font-weight: 600 !important;
     color: #2b2d42 !important;
     border-radius: 5px !important;
-    transition: all 0.3s ease !important;
+    transition: all 0.25s ease !important;
+    border-bottom: none !important;
+    letter-spacing: 0.3px;
 }
 
-.site-header .site-nav a:hover {
-    background: linear-gradient(135deg, #00d9ff20, #06ffa520) !important;
-    transform: translateY(-2px) !important;
+/* ~/ home link — styled as terminal path */
+.menu ul li a[href="/"] {
+    color: #06ffa5 !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+}
+
+/* Hover state */
+.menu ul li a:hover {
+    background: linear-gradient(135deg, #00d9ff18, #06ffa518) !important;
     color: #00d9ff !important;
+    transform: translateY(-1px) !important;
+    border-bottom: none !important;
+}
+
+/* Active / current page */
+.menu ul li a[aria-current="page"] {
+    background: linear-gradient(135deg, #00d9ff22, #06ffa522) !important;
+    color: #00d9ff !important;
+    border-bottom: 2px solid #00d9ff !important;
+    border-radius: 5px 5px 2px 2px !important;
 }
 
 /* ============================================
@@ -316,9 +342,32 @@ hr {
         box-shadow: 0 2px 20px rgba(0, 217, 255, 0.2);
     }
 
-    nav a:hover {
-        background: linear-gradient(135deg, #00d9ff30, #06ffa530);
-        box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+    .menu ul li a {
+        color: #c9d1d9 !important;
+    }
+
+    .menu ul li a[href="/"] {
+        color: #06ffa5 !important;
+        text-shadow: 0 0 8px rgba(6, 255, 165, 0.4);
+    }
+
+    .menu ul li a:hover {
+        background: linear-gradient(135deg, #00d9ff25, #06ffa525) !important;
+        color: #00d9ff !important;
+        box-shadow: 0 0 12px rgba(0, 217, 255, 0.2) !important;
+        border-bottom: none !important;
+    }
+
+    .menu ul li a[aria-current="page"] {
+        background: linear-gradient(135deg, #00d9ff18, #06ffa518) !important;
+        color: #00d9ff !important;
+        border-bottom: 2px solid #00d9ff !important;
+        text-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
+    }
+
+    .menu ul li+li::before {
+        color: #00d9ff !important;
+        opacity: 0.4;
     }
 
     /* Dark mode cards */
