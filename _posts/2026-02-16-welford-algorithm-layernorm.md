@@ -363,8 +363,7 @@ Final:   single (mean, variance) for the entire row
 
 **Source:** [Triton LayerNorm Tutorial](https://github.com/triton-lang/triton/blob/main/python/tutorials/05-layer-norm.py)
 
-> **TODO**: WIP - Add Triton code examples comparing naive two-pass vs Welford implementation for LayerNorm with tiling.
-
+The official Triton tutorial uses a two-pass approach — simple and stable enough when hidden_dim fits in one block.
 
 ### When Welford Becomes Critical
 
@@ -373,12 +372,109 @@ Final:   single (mean, variance) for the entire row
 - ❗ Hidden dimension > 16K (requires tiling)
 - ❗ Extreme data distributions (variance << mean²)
 
-
 **Skip Welford when:**
 - ✅ Hidden dim ≤ 8K (fits in one block)
 - ✅ FP32 precision
 
+---
 
+## Triton Implementations
+
+To make this concrete, here are two Triton kernels — one naive single-block implementation, and one tiled Welford version for larger hidden dimensions.
+
+### Naive (Single-Block)
+
+Assumes the entire row fits in one block's SRAM. Two passes happen in fast memory — no extra HBM cost.
+
+```python
+@triton.jit
+def layernorm_kernel(
+    x_ptr, output_ptr, weight_ptr, bias_ptr,
+    M, N, eps, stride_m, stride_n,
+    BLOCK_N: tl.constexpr,
+):
+    """
+    Single-block LayerNorm. Assumes N <= BLOCK_N (e.g., hidden_dim <= 8K).
+    Loads the entire row once into SRAM — mean and variance are computed from
+    registers, so this is effectively a single HBM pass.
+    """
+    pid_m = tl.program_id(axis=0)
+    offset_n = tl.arange(0, BLOCK_N)
+    mask = offset_n < N
+    offset = pid_m * stride_m + offset_n * stride_n
+    x = tl.load(x_ptr + offset, mask=mask, other=0.0)
+
+    mean = tl.sum(x, axis=0) / N
+    centered = tl.where(mask, x - mean, other=0.0)
+    var = tl.sum((centered * centered)) / N
+    x_norm = (x - mean) / tl.sqrt(var + eps)
+
+    w = tl.load(weight_ptr + offset_n, mask=mask, other=0.0)
+    bias = tl.load(bias_ptr + offset_n, mask=mask, other=0)
+    out = x_norm * w + bias
+    tl.store(output_ptr + pid_m * stride_m + offset_n * stride_n, out, mask=mask)
+```
+
+### Tiled Welford
+
+For when hidden_dim > BLOCK_N. 
+Pass 1 streams through the tiles computing Welford stats and merging them. Pass 2 normalizes.
+
+```python
+@triton.jit
+def layernorm_kernel_welford(
+    x_ptr, output_ptr, weight_ptr, bias_ptr,
+    M, N, eps, stride_m, stride_n,
+    BLOCK_N: tl.constexpr,
+):
+    """
+    Tiled LayerNorm with Welford's algorithm. Works for any N.
+    Pass 1: compute global mean/variance via Welford merge across tiles.
+    Pass 2: normalize using global stats (requires re-reading from HBM).
+    """
+    pid_m = tl.program_id(axis=0)
+    n_total = 0.0
+    mean_combined = 0.0
+    M2_combined = 0.0
+
+    num_blocks = tl.cdiv(N, BLOCK_N)
+    offset_n = tl.arange(0, BLOCK_N)
+
+    for b in range(num_blocks):
+        offset = pid_m * stride_m + (b * BLOCK_N + offset_n) * stride_n
+        col_start = b * BLOCK_N
+        mask = col_start + offset_n < N
+        x_tile = tl.load(x_ptr + offset, mask=mask, other=0.0)
+
+        n_block = tl.sum(tl.where(mask, 1.0, 0.0), axis=0)
+        mean_block = tl.sum(tl.where(mask, x_tile, 0.0), axis=0) / tl.maximum(n_block, 1.0)
+        centered = tl.where(mask, x_tile - mean_block, 0.0)
+        M2_block = tl.sum(centered * centered, axis=0)
+
+        # Welford merge: combines local block stats into running global stats
+        delta = mean_block - mean_combined
+        n_new = n_total + n_block
+        n_new_safe = tl.maximum(n_new, 1.0)
+        mean_combined = (n_block * mean_block + n_total * mean_combined) / n_new_safe
+        M2_combined = M2_block + M2_combined + (delta * delta * n_total * n_block) / n_new_safe
+        n_total = n_new
+
+    var = M2_combined / N
+
+    # Pass 2: normalize (must re-read tiles from HBM)
+    for b in range(num_blocks):
+        offset = pid_m * stride_m + (b * BLOCK_N + offset_n) * stride_n
+        col_start = b * BLOCK_N
+        mask = col_start + offset_n < N
+        w = tl.load(weight_ptr + col_start + offset_n, mask=mask, other=0.0)
+        bias = tl.load(bias_ptr + col_start + offset_n, mask=mask, other=0.0)
+        x_tile = tl.load(x_ptr + offset, mask=mask, other=0.0)
+        x_norm = (x_tile - mean_combined) / tl.sqrt(var + eps)
+        out = x_norm * w + bias
+        tl.store(output_ptr + offset, out, mask=mask)
+```
+
+The reloading of the tiles in Pass 2 is unavoidable — once the SRAM is full of the next tile, the previous tile's data is gone. This is the HBM bandwidth cost of tiling, regardless of whether you use Welford or naive two-pass.
 
 ---
 
