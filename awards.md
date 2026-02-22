@@ -64,27 +64,27 @@ Competed and secured **3rd place** at the SiberX CISO Forum Canada Capture The F
 
   <div class="photo-card">
     <img src="/assets/images/awards/1707969329089.jpeg" alt="CISO Forum Canada CTF — Stage Ceremony" loading="lazy" />
-    <div class="photo-caption">🏆 Award ceremony on stage — CISO Forum Canada CTF 2024</div>
+    <div class="photo-caption"></div>
   </div>
 
   <div class="photo-card">
     <img src="/assets/images/awards/1707969325717.jpeg" alt="Team 404NOTFOUNDERS with trophy nameplate" loading="lazy" />
-    <div class="photo-caption">🛡️ Team 404NOTFOUNDERS with the TSoM CTF trophy nameplate</div>
+    <div class="photo-caption"></div>
   </div>
 
   <div class="photo-card">
     <img src="/assets/images/awards/1707969326043.jpeg" alt="CTF 2024 Trophy — 404NOTFOUNDERS" loading="lazy" />
-    <div class="photo-caption">🎖️ The TSoM CTF 2024 award plaque</div>
+    <div class="photo-caption"></div>
   </div>
 
   <div class="photo-card">
     <img src="/assets/images/awards/1707969327957.jpeg" alt="With CTF organizers" loading="lazy" />
-    <div class="photo-caption">🤝 With the event organizers at SiberX CISO Forum Canada</div>
+    <div class="photo-caption"></div>
   </div>
 
   <div class="photo-card">
     <img src="/assets/images/awards/1707969325611.jpeg" alt="Team at the CTF event" loading="lazy" />
-    <div class="photo-caption">👾 Team 404NOTFOUNDERS at the Toronto School of Management CTF</div>
+    <div class="photo-caption"></div>
   </div>
 
 </div>
