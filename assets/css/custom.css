@@ -548,3 +548,68 @@ main {
         color: #c9d1d9 !important;
     }
 }
+
+/* ============================================
+   AWARDS PAGE - Photo Grid
+   ============================================ */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.photo-card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 217, 255, 0.15);
+    background: rgba(0, 217, 255, 0.03);
+    transition: all 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.18);
+    border-color: rgba(0, 217, 255, 0.4);
+}
+
+.photo-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.photo-card:hover img {
+    transform: scale(1.03);
+}
+
+.photo-caption {
+    padding: 8px 12px 10px;
+    font-size: 0.82em;
+    color: #2b2d42 !important;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+    .photo-card {
+        background: rgba(0, 217, 255, 0.05);
+        border-color: rgba(0, 217, 255, 0.12);
+    }
+
+    .photo-caption {
+        color: #8b949e !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
