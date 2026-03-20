@@ -30,6 +30,9 @@ Best practices for securing Active Directory environments against common threats
 
 ### Security Research
 
+**[Why Smart, Security-Aware People Still Fall for Phishing?](/blog/why-smart-people-fall-for-phishing.html)**  
+A cyberpsychology look at why even trained, security-aware professionals get caught by phishing — and what we can do differently. *Published on LinkedIn Pulse · March 2026*
+
 **[SpamGPT: The New Face of Phishing-as-a-Service](https://github.com/defendwithgr/Cybersecurity-Writeups/blob/main/SpamGPT%3AThe%20New%20Face%20of%20Phishing-as-a-Service)**  
 Analysis of AI-powered phishing campaigns and emerging phishing-as-a-service threats.
 
