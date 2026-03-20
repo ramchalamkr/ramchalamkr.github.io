@@ -30,6 +30,9 @@ Best practices for securing Active Directory environments against common threats
 
 ### Security Research
 
+**[AI vs. Zero Trust: The Twin Pillars of Cybersecurity Defense in 2025](/blog/ai-vs-zero-trust-2025.html)**  
+How AI and Zero Trust work together as the two dominant strategies shaping modern cyber defence. *Published on LinkedIn Pulse · 2025*
+
 **[Why Smart, Security-Aware People Still Fall for Phishing?](/blog/why-smart-people-fall-for-phishing.html)**  
 A cyberpsychology look at why even trained, security-aware professionals get caught by phishing — and what we can do differently. *Published on LinkedIn Pulse · March 2026*
 
