@@ -12,3 +12,4 @@ node_modules/
 vendor
 .ideaCOMPLETE_PORTFOLIO_GUIDE.md
 COMPLETE_PORTFOLIO_GUIDE.pdf
+*.code-workspace
