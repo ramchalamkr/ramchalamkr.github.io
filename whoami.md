@@ -8,7 +8,7 @@ permalink: /whoami.html
 
 ## Who I Am
 
-I've always believed career twists lead to the right path. After years in SAP techno-functional consulting, I found my passion in cybersecurity as a **SOC Analyst at Kryptos Technologies**—thriving on threat monitoring and incident response (Best Employee of the Month award 🏆).
+I've always believed career twists lead to the right path. After years in SAP techno-functional consulting, I found my passion in cybersecurity and did my post-graduate certificate in cybersecurity operations, then started my journey as a **SOC Analyst at Kryptos Technologies**—thriving on threat monitoring and incident response (Best Employee of the Month award 🏆).
 
 ## What I Do
 
@@ -33,6 +33,8 @@ Supporting course delivery for Cybersecurity Operations, facilitating discussion
 - Managed user provisioning for 1000+ employees with proper access control
 - Conducted security reviews for SAP migrations and version upgrades (5000+ users)
 - Optimized role structures for diverse business processes
+- Worked on SAP cross functional modules like SD, MM, FI and ABAP.
+- Helped with Retrofitting and development of new roles and authorization objects.
 - Mentored junior team members in access management principles
 
 ## Certifications
@@ -41,12 +43,12 @@ Supporting course delivery for Cybersecurity Operations, facilitating discussion
 $ ls certifications/
 ```
 
+- ⏳ **Microsoft SC-500** - Identity and Access Administrator (In Progress)
 - ✅ **Microsoft SC-200** - Security Operations Analyst (Aug 2024)
 - ✅ **CompTIA Security+** SY0-601 (May 2024)
-- ✅ **ISC² CC** - Certified in Cybersecurity (Jun 2023)
-- ⏳ **Microsoft AZ-500** - Azure Security Engineer (In Progress)
-- 📜 **Fortinet NSE 1,2,3** - Network Security Associate (Aug 2023)
 - 📜 **SOC2** - LinkedIn (Nov 2024)
+- 📜 **Fortinet NSE 1,2,3** - Network Security Associate (Aug 2023)
+- ✅ **ISC² CC** - Certified in Cybersecurity (Jun 2023)
 - 📜 **Qualys** - Vulnerability Management Foundation (Jun 2023)
 - 📜 **Splunk** - Fundamentals (Mar 2023)
 - 📜 **NIST** - Risk Management Framework (Sep 2022)
@@ -87,10 +89,18 @@ Infrastructure:
 
 I'm passionate about giving back to the cybersecurity community:
 
-- 🤝 **ISC2 Toronto Chapter** - Active Volunteer
+- 🤝 **ISC2 Toronto Chapter** - Director of Professional Development & Volunteer
 - 👩‍💻 **Leading Cyber Ladies** - Community Member
 - 🎯 **CTF Player** - Continuous hands-on practice
-- 📖 **Ilaiya Thalaimurai** - Program Director, designing crash courses and mentoring students
+- 📖 **Ilaiya Thalaimurai, India** - Program Director, designing crash courses and mentoring students
+
+## Beyond Cybersecurity
+
+When I'm not in front of a terminal, you'll find me:
+
+- 📚 Reading — always have a book on the go
+- 🎵 Listening to music
+- 🏠 Working on home cybersecurity projects — homelabs, CTF challenges, and tinkering
 
 ## Areas of Interest
 

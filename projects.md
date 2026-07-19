@@ -6,89 +6,63 @@ permalink: /projects.html
 
 # <span class="term-prompt">&gt;</span> gayathri@defendwithgr <span class="term-path">~</span> ls <span class="term-filename">projects/</span> <span class="term-cursor">█</span>
 
-A collection of cybersecurity projects showcasing my work in incident response, vulnerability assessment, penetration testing, and security automation.
+A collection of cybersecurity projects spanning threat detection, security governance, vulnerability assessment, and infrastructure defence.
 
 ---
 
-## [1] Cybersecurity Incident Response Plan
-**Duration**: Feb 2023 – Mar 2023 | **Organization**: Big Leaf Enterprise
+## [1] Threat Detection with Amazon GuardDuty
+**Date**: Jun 2026 | **Platform**: AWS / NextWork
 
-Designed and delivered a comprehensive incident response plan ensuring alignment with local data governance policies and organizational objectives.
+Hands-on lab enabling Amazon GuardDuty on an AWS account and working through the full investigation workflow — generating sample findings across reconnaissance, EC2 compromise, and C2 communication categories, then triaging each alert against the underlying CloudTrail, VPC Flow Log, and DNS telemetry.
 
-### Key Accomplishments
-- Developed end-to-end incident response framework aligned with industry best practices
-- Conducted comprehensive risk evaluations across IT infrastructure
-- Utilized excellent presentation skills to explain complex concepts to non-technical stakeholders
-- Created detailed incident classification and escalation procedures
+**Tools**: Amazon GuardDuty, AWS CloudTrail, VPC Flow Logs, DNS Logs
 
-**Technologies**: NIST Cybersecurity Framework, Risk Assessment Tools
-
-[Read more →](/projects/incident-response)
+[Read more →](/projects/guardduty/)
 
 ---
 
-## [2] Vulnerability Assessment & Penetration Testing (VAPT)
-**Duration**: Jan 2025 - Apr 2025
+## [2] NYPD 99th Precinct – Security Governance
+**Duration**: Feb 2026 – Jun 2026 | **Program**: WiCyS GRC Intensive
 
-Comprehensive security assessments of web applications and internal networks to identify, validate, and remediate vulnerabilities.
+Final security governance project for the WiCyS GRC Intensive program, built around the NYPD 99th Precinct case study. Categorized the 99-CMTOS system under FIPS 199, authored a Security Awareness and Training policy, audited 20 security controls in Compyl, and identified and remediated an AC-3 (Access Enforcement) control gap.
 
-### Key Activities
-- Conducted internal and external security audits using industry-standard tools
-- Performed comprehensive network reconnaissance and enumeration
-- Scanned web applications for OWASP Top 10 vulnerabilities
-- Exploited vulnerabilities in controlled test environment
-- Delivered comprehensive technical reports with actionable recommendations
+**Frameworks & Tools**: FIPS 199, NIST SP 800-53, Compyl, NIST RMF
 
-**Tools**: Nmap, Nessus, OpenVAS, Metasploit, Burp Suite, OWASP ZAP
-
-[Read more →](/projects/vapt)
+[Read more →](/projects/wicys-grc/)
 
 ---
 
-## [3] Azure Home Lab - Security Operations Environment
-**Duration**: Ongoing | **Type**: Hands-on Learning Environment
+## [3] Windows Server & Active Directory Home Lab
+**Date**: Dec 2025 | **Platform**: Microsoft Azure
 
-Building a comprehensive Azure-based home lab to practice security operations, incident response, and cloud security configurations in a realistic enterprise environment.
+Built a Windows Server 2019 environment on Azure from scratch — configured Active Directory, DNS, DHCP, OUs, GPOs, and security groups, and documented the entire setup with screenshots to validate the build.
 
-### Lab Components
-- Active Directory integration with Azure AD (Entra ID)
-- Microsoft Defender for Endpoint deployment
-- Security monitoring with Microsoft Sentinel
-- Network security groups and firewall configurations
-- Role-based access control (RBAC) implementation
+**Technologies**: Windows Server 2019, Active Directory, Azure, DNS, DHCP, GPO
 
-### Skills Developed
-- Cloud security architecture and design
-- Security information and event management (SIEM)
-- Incident detection and response workflows
-- Azure security best practices
-
-**Technologies**: Microsoft Azure, Azure AD, Microsoft Defender, Microsoft Sentinel, Azure Security Center
+[Read more →](/projects/azure-homelab/)
 
 ---
 
-## [4] AI in Cybersecurity - Learning Journey
-**Status**: Exploring \u0026 Learning | **Started**: Nov 2025
+## [4] Vulnerability Assessment & Penetration Testing (VAPT)
+**Duration**: Jan 2025 – Apr 2025 | **Organization**: Kryptos Technologies
 
-Currently exploring how artificial intelligence and machine learning can be applied to cybersecurity challenges. Learning the fundamentals of AI/ML and investigating potential applications in security alert automation and threat detection.
+Ran vulnerability assessments using Nmap and Nessus across web applications and internal networks, used Metasploit to simulate exploitation, and mapped confirmed attack paths to MITRE ATT&CK to assess how far an adversary could realistically get inside the environment.
 
-### Learning Focus
-- Python programming for AI/ML applications
-- Machine learning fundamentals
-- Security use cases for AI (alert triage, anomaly detection)
-- Microsoft Defender API exploration
+**Tools**: Nmap, Nessus, Metasploit, Burp Suite, OWASP ZAP, OpenVAS, MITRE ATT&CK
 
-### Future Goals
-- Build practical AI-based security tools
-- Implement automated alert classification
-- Develop threat intelligence enhancement capabilities
-
-**Technologies**: Python, TensorFlow basics, Microsoft Graph Security API
+[Read more →](/projects/vapt/)
 
 ---
 
-## More Projects
+## [5] Capstone – Cyber Operations Response Plan
+**Duration**: Feb 2023 – Mar 2023 | **Client**: Big Leaf Enterprise
 
-All projects involve hands-on application of cybersecurity principles, tools, and frameworks. Check individual project pages for detailed technical writeups, methodologies, and outcomes.
+University capstone project designing a full incident response plan for a small executive consulting and coaching firm. Worked through threat modeling, defined containment and recovery steps for all major threat categories, and validated the plan against realistic adversary scenarios. Presented to both company leadership and university faculty.
 
-**→ [View all projects on GitHub](https://github.com/defendwithgr)**
+**Frameworks**: NIST SP 800-61 Rev 2, NIST Cybersecurity Framework
+
+[Read more →](/projects/incident-response/)
+
+---
+
+**→ [View GitHub](https://github.com/defendwithgr)**

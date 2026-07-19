@@ -6,7 +6,7 @@ title: Gayathri Rajamohan
 first_name: Gayathri
 last_name: Rajamohan
 description: >
-  SOC Analyst | Cybersecurity Enthusiast | Threat Hunter
+  Cybersecurity Educator | Threat Hunter | Security Enthusiast
 baseurl: ""
 url: https://defendwithgr.github.io
 
@@ -30,6 +30,7 @@ header_pages:
   - projects.md
   - blog.md
   - awards.md
+  - resume.md
 
 # -----------------------------------------------------------------------------
 # Footer
@@ -60,6 +61,9 @@ exclude:
   - LICENSE
   - bin/
   - vendor/
+  - COMPLETE_PORTFOLIO_GUIDE.md
+  - COMPLETE_PORTFOLIO_GUIDE.pdf
+  - CLAUDE.md
 
 # -----------------------------------------------------------------------------
 # Collections (for projects and blog posts)

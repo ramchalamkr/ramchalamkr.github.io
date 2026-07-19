@@ -56,12 +56,12 @@ permalink: /resume.html
 ## 📜 Certifications
 
 ```
+⏳ Microsoft SC-500     Identity and Access Administrator  In Progress
 ✅ Microsoft SC-200     Security Operations Analyst        Aug 2024
 ✅ CompTIA Security+    SY0-601                            May 2024
-✅ ISC² CC              Certified in Cybersecurity         Jun 2023
-⏳ Microsoft AZ-500     Azure Security Engineer            In Progress
 📜 SOC2                 LinkedIn                           Nov 2024
 📜 Fortinet NSE 1,2,3   Network Security Associate        Aug 2023
+✅ ISC² CC              Certified in Cybersecurity         Jun 2023
 📜 Qualys               Vulnerability Management          Jun 2023
 📜 Splunk               Fundamentals                      Mar 2023
 📜 NIST                 Risk Management Framework         Sep 2022
@@ -103,10 +103,10 @@ Researching ML models for automated Microsoft Defender alert triage
 
 ## 🤝 Community Involvement
 
-- ISC2 Toronto Chapter - Active Volunteer
+- ISC2 Toronto Chapter - Director of Professional Development & Volunteer
 - Leading Cyber Ladies - Community Member
 - CTF Competition Player
-- Ilaiya Thalaimurai - Program Director (crash courses & mentorship)
+- Ilaiya Thalaimurai, India - Program Director (crash courses & mentorship)
 
 ---
 
@@ -120,4 +120,4 @@ Threat Detection & Response | Security Monitoring | Incident Investigation | AI 
 
 ---
 
-**→ [Download PDF Resume](#)** *(link to PDF if available)*
+**→ [Connect on LinkedIn](https://www.linkedin.com/in/gayathri-rajamohan/)** | **[View GitHub](https://github.com/defendwithgr)**

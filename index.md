@@ -8,7 +8,7 @@ $ whoami
 > gayathri_rajamohan
 
 $ cat role.txt
-> SOC Analyst | Cybersecurity Enthusiast | Threat Hunter
+> Cybersecurity Educator | Threat Hunter | Security Enthusiast
 
 $ ls skills/
 > incident_response  malware_detection  security_monitoring
@@ -18,10 +18,10 @@ $ ls skills/
 
 ## Welcome
 
-I'm Gayathri Rajamohan, a **Security Operations Center (SOC) Analyst** specializing in threat detection, incident response, and security monitoring. After years in SAP security consulting, I found my true passion in cybersecurity—protecting organizations from evolving threats.
+I'm Gayathri Rajamohan, a **Cybersecurity Teaching Assistant at York University** and former SOC Analyst, specializing in threat detection, incident response, and security monitoring. After years in SAP security consulting, I found my true passion in cybersecurity—protecting organizations from evolving threats.
 
 ### Current Focus
-- 🛡️ **SOC Operations**: Threat monitoring, incident triage, and response
+- 🎓 **Teaching & Mentoring**: Cybersecurity Operations course at York University
 - 🔍 **Threat Hunting**: Proactive threat detection using Microsoft Defender
 - 🤖 **AI in Cybersecurity**: Exploring automation for security alert analysis
 - 📚 **Continuous Learning**: Active in CTF competitions and TryHackMe challenges
@@ -29,7 +29,7 @@ I'm Gayathri Rajamohan, a **Security Operations Center (SOC) Analyst** specializ
 ### Quick Stats
 - **📍 Location**: Toronto, ON
 - **🎓 Education**: Graduate Certificate in Cybersecurity Operations (York University)
-- **🏆 Certifications**: Microsoft SC-200, CompTIA Security+, ISC² CC
+- **🏆 Certifications**: Microsoft SC-500 (in progress), SC-200, CompTIA Security+
 - **💼 Current Role**: Teaching Assistant - Cybersecurity (York University)
 
 ---
@@ -37,9 +37,9 @@ I'm Gayathri Rajamohan, a **Security Operations Center (SOC) Analyst** specializ
 ### Recent Activity
 
 #### Latest Projects
-- [AI-Powered Security Alert Automation](/projects/ai-security-automation) - Researching ML models for Microsoft Defender alerts
-- [VAPT Assessment](/projects/vapt) - Comprehensive vulnerability assessments and penetration testing
-- [Incident Response Plan](/projects/incident-response) - Enterprise-level IR framework development
+- [Threat Detection with Amazon GuardDuty](/projects/guardduty/) - Hands-on AWS threat detection and alert triage
+- [NYPD 99th Precinct – Security Governance](/projects/wicys-grc/) - WiCyS GRC Intensive capstone project
+- [VAPT Assessment](/projects/vapt/) - Comprehensive vulnerability assessments and penetration testing
 
 #### Recent Writeups
 - TryHackMe: Burp Suite Basics
@@ -49,10 +49,10 @@ I'm Gayathri Rajamohan, a **Security Operations Center (SOC) Analyst** specializ
 ---
 
 ### Community & Volunteering
-- 🤝 ISC2 Toronto Chapter Volunteer
+- 🤝 Director of Professional Development & Volunteer — ISC2 Toronto Chapter
 - 👩‍💻 Leading Cyber Ladies Member
 - 🎯 CTF Competition Player
-- 📖 Program Director at Ilaiya Thalaimurai
+- 📖 Program Director — Ilaiya Thalaimurai, India
 
 ---
 

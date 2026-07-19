@@ -36,6 +36,9 @@ How AI and Zero Trust work together as the two dominant strategies shaping moder
 **[Why Smart, Security-Aware People Still Fall for Phishing?](/blog/why-smart-people-fall-for-phishing.html)**  
 A cyberpsychology look at why even trained, security-aware professionals get caught by phishing — and what we can do differently. *Published on LinkedIn Pulse · March 2026*
 
+**[Someone Cloned My Father's Instagram. Then They Did It Again.](/blog/instagram-clone-article.html)**  
+A personal account of repeated social media impersonation — how profile cloning works, what to do when it happens, and the legal resources available in Canada and India. *Published on LinkedIn Pulse · April 2026*
+
 **[SpamGPT: The New Face of Phishing-as-a-Service](https://github.com/defendwithgr/Cybersecurity-Writeups/blob/main/SpamGPT%3AThe%20New%20Face%20of%20Phishing-as-a-Service)**  
 Analysis of AI-powered phishing campaigns and emerging phishing-as-a-service threats.
 
@@ -59,4 +62,4 @@ $ grep -r "topics" blog/
 
 **→ [View all writeups on GitHub](https://github.com/defendwithgr/Cybersecurity-Writeups)**
 
-**→ [Follow my TryHackMe profile](https://tryhackme.com/p/defendwithgr)** *(if applicable)*
+**→ [Follow my TryHackMe profile](https://tryhackme.com/p/defendwithgr)**
