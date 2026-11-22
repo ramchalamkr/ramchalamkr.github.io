@@ -7,12 +7,16 @@
 :root {
   color-scheme: light;
   --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
+  --global-code-bg-color: rgba(30, 80, 150, 0.06);
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
+  --global-theme-color: #1e5096;
+  --global-hover-color: #0f2d59;
   --global-hover-text-color: #{$white-color};
+  --global-surface-bg: #f8fafc;
+  --global-surface-hover-bg: #f1f5f9;
+  --global-badge-soft-bg: #ecf2fa;
+  --global-badge-soft-text: #0f2d59;
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
@@ -80,9 +84,13 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-theme-color: #58a6ff;
+  --global-hover-color: #79c0ff;
   --global-hover-text-color: #{$white-color};
+  --global-surface-bg: #23272e;
+  --global-surface-hover-bg: #2a2f38;
+  --global-badge-soft-bg: rgba(88, 166, 255, 0.14);
+  --global-badge-soft-text: #79c0ff;
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};

@@ -46,23 +46,489 @@ body.sticky-bottom-footer {
 }
 
 /* Custom styles for patent status badges */
+.badge-pending,
+.badge-granted {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.35em 0.7em;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
 .badge-pending {
-  background-color: #FFA500; /* Orange for pending */
+  background-color: #f59e0b; /* Amber for pending */
   color: #fff;
 }
 
 .badge-granted {
-  background-color: #28a745; /* Green for granted */
+  background-color: #10b981; /* Emerald green for granted */
   color: #fff;
 }
 
-// TODO: redefine content layout.
-
 /******************************************************************************
- * Publications
+ * Modern Redesign Components (Homepage, Skills, News, Publications, Blog)
  ******************************************************************************/
 
-// TODO: redefine publications layout.
+// Homepage section headings
+div.post > article > h2,
+div.post > article > .clearfix > h2 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding-bottom: 0.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1.5px solid var(--global-divider-color);
+}
+
+// Modern role tagline pill
+.role-tagline {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--global-badge-soft-text);
+  background-color: var(--global-badge-soft-bg);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  padding: 0.28rem 0.9rem;
+  margin-bottom: 1rem;
+}
+
+// Streamlined intro summary & highlight cards
+.intro-lead {
+  font-size: 0.98rem;
+  line-height: 1.65 !important;
+  color: var(--global-text-color);
+  margin-bottom: 1rem;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+  margin-bottom: 0.9rem;
+}
+
+.intro-card {
+  background-color: var(--global-surface-bg);
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 8px;
+  padding: 0.65rem 0.95rem;
+  transition: border-color 0.18s ease, background-color 0.18s ease;
+
+  &:hover {
+    background-color: var(--global-surface-hover-bg);
+  }
+
+  .intro-card-title {
+    font-size: 0.91rem;
+    font-weight: 600;
+    color: var(--global-badge-soft-text);
+    margin-bottom: 0.2rem;
+    line-height: 1.35;
+  }
+
+  .intro-card-desc {
+    font-size: 0.88rem;
+    color: var(--global-text-color);
+    line-height: 1.5 !important;
+    margin-bottom: 0;
+  }
+}
+
+.intro-personal-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  background-color: var(--global-surface-bg);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-personal-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--global-text-color-light);
+  margin-right: 0.25rem;
+}
+
+.intro-personal-chip {
+  display: inline-block;
+  font-size: 0.81rem;
+  font-weight: 500;
+  color: var(--global-badge-soft-text);
+  background-color: var(--global-badge-soft-bg);
+  border: 1px solid rgba(30, 80, 150, 0.14);
+  border-radius: 999px;
+  padding: 0.14rem 0.65rem;
+}
+
+html[data-theme="dark"] .intro-personal-chip {
+  border-color: rgba(88, 166, 255, 0.22);
+}
+
+// Technical skills card & pills
+.skills-card {
+  background-color: var(--global-surface-bg);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 0.65rem 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-table {
+  margin-bottom: 0;
+
+  tr + tr {
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  th {
+    width: 24%;
+    white-space: nowrap;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+    padding: 0.65rem 1rem 0.65rem 0;
+    vertical-align: middle;
+  }
+
+  td {
+    padding: 0.5rem 0;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 576px) {
+    th,
+    td {
+      display: block;
+      width: 100%;
+      white-space: normal;
+      padding: 0.35rem 0;
+    }
+
+    th {
+      padding-top: 0.6rem;
+      padding-bottom: 0.1rem;
+    }
+
+    td {
+      padding-bottom: 0.6rem;
+    }
+  }
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: var(--global-badge-soft-bg);
+  color: var(--global-badge-soft-text);
+  border: 1px solid rgba(30, 80, 150, 0.14);
+  border-radius: 6px;
+  padding: 0.16rem 0.55rem;
+  margin: 0.14rem 0.25rem 0.14rem 0;
+  font-size: 0.81rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+html[data-theme="dark"] .skill-tag {
+  border-color: rgba(88, 166, 255, 0.22);
+}
+
+// Sleek circular social contact buttons
+div.post .social {
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+
+  .contact-icons {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 50%;
+      border: 1px solid var(--global-divider-color);
+      background-color: var(--global-surface-bg);
+      transition: transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+
+      i::before {
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+
+      img,
+      svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        border-color: var(--global-theme-color);
+        background-color: var(--global-badge-soft-bg);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// News feed container
+div.post .news {
+  background-color: var(--global-surface-bg);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 0.55rem 1.1rem;
+  margin-bottom: 1.5rem;
+
+  .table-responsive[style*="max-height"] {
+    max-height: 340px !important;
+    overflow-y: auto;
+    padding-right: 0.35rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--global-divider-color) transparent;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--global-divider-color);
+      border-radius: 999px;
+    }
+  }
+
+  table {
+    margin-bottom: 0;
+
+    tr + tr {
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    th,
+    td {
+      padding: 0.55rem 0.6rem 0.55rem 0;
+      font-size: 0.93rem;
+      line-height: 1.55;
+    }
+
+    th {
+      color: var(--global-text-color-light);
+      font-weight: 600;
+      font-size: 0.82rem;
+      white-space: nowrap;
+      vertical-align: top;
+      padding-top: 0.65rem;
+    }
+  }
+}
+
+/******************************************************************************
+ * Publications & Patents Cards
+ ******************************************************************************/
+
+div.post .bibsearch-form-input {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background-color: var(--global-surface-bg);
+  color: var(--global-text-color);
+  padding: 0.5rem 0.85rem;
+  font-size: 0.92rem;
+  box-shadow: none;
+
+  &:focus {
+    border-color: var(--global-theme-color);
+  }
+}
+
+div.post .publications {
+  margin-top: 1.25rem;
+
+  h2.bibliography {
+    color: var(--global-text-color-light);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 0.85rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.9rem;
+    text-align: right;
+  }
+
+  ol.bibliography > li {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.55 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      box-shadow: 0 4px 12px rgba(15, 45, 89, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .abbr abbr {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 0.45em 0.7em;
+      border-radius: 6px !important;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+      text-align: center;
+
+      &,
+      a,
+      div,
+      span {
+        color: #ffffff !important;
+        text-decoration: none;
+      }
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 1.03rem;
+      line-height: 1.4;
+      margin-bottom: 0.25rem;
+      color: var(--global-text-color);
+    }
+
+    .author {
+      font-size: 0.91rem;
+      line-height: 1.5;
+      margin-bottom: 0.18rem;
+
+      > em {
+        font-weight: 600;
+        color: var(--global-theme-color);
+        border-bottom: 1.5px solid var(--global-theme-color);
+        font-style: normal;
+      }
+    }
+
+    .periodical {
+      font-size: 0.88rem;
+      color: var(--global-text-color-light);
+      line-height: 1.45;
+      margin-bottom: 0.45rem;
+    }
+
+    .links {
+      margin-top: 0.35rem;
+
+      a.btn {
+        border-radius: 6px;
+        font-size: 0.76rem;
+        font-weight: 500;
+        padding: 0.22rem 0.72rem;
+        margin: 0.15rem 0.3rem 0.15rem 0;
+        border: 1px solid var(--global-divider-color);
+        background-color: var(--global-surface-bg);
+        color: var(--global-text-color);
+        text-transform: none;
+        box-shadow: none !important;
+        transition: all 0.15s ease;
+
+        &:hover {
+          background-color: var(--global-theme-color);
+          border-color: var(--global-theme-color);
+          color: #ffffff;
+        }
+      }
+    }
+
+    html[data-theme="dark"] & .links a.btn:hover {
+      color: #0d1117;
+    }
+
+    div.abstract.hidden.open {
+      margin-top: 0.65rem;
+      border-radius: 8px;
+      border: 1px solid var(--global-divider-color);
+      background-color: var(--global-surface-bg);
+      padding: 0.35rem 0.5rem;
+    }
+  }
+}
+
+/*****************************************************************************
+ * Blog Section Cards & Header
+ *****************************************************************************/
+
+div.post .header-bar {
+  border-bottom: 1px solid var(--global-divider-color);
+  text-align: left;
+  padding: 1rem 0 1.4rem;
+  margin-bottom: 1.75rem;
+
+  h1 {
+    color: var(--global-text-color);
+    font-size: 2.35rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.3rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--global-text-color-light);
+    margin-bottom: 0;
+  }
+}
+
+div.post ul.post-list > li {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--global-card-bg-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(15, 45, 89, 0.08);
+    border-color: var(--global-theme-color);
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.45rem;
+  }
+
+  p {
+    margin-bottom: 0.45rem;
+  }
+
+  .post-meta {
+    font-size: 0.84rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0;
+  }
+}
 
 /*****************************************************************************
 * Projects

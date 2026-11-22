@@ -1,6 +1,6 @@
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+  color: "#0f2d59"
 
 "PhysRev":
   url: https://journals.aps.org/
@@ -11,27 +11,46 @@
 NeurIPS:
   name: "Conference on Neural Information Processing Systems"
   abbr: NeurIPS
-  url: "https://nips.cc/"
-  logo: NeurIPS_Logo.svg
-  color: "#FFA500" # Changed to orange
+  url: "https://neurips.cc/"
+  color: "#1e5096" # Modern Tech Navy-Blue (matches CV accentColor)
 
 BIBE:
-  name: "Bioinformatics and Bioengineering"
-  abbr: BIBE
-  logo: bibe.png
-  color: "#28a745" # Changed to green
+  name: "IEEE International Conference on Bioinformatics and Bioengineering"
+  abbr: IEEE BIBE
+  color: "#2b6cb0"
 
 ICIAR:
   name: "International Conference on Image Analysis and Recognition"
   abbr: ICIAR
-  color: "#DAA520"
+  color: "#4a5568"
 
 Masters Thesis:
-  name: "International Conference on Image Analysis and Recognition"
-  abbr: Masters Thesis
-  color: "#B22222"
+  name: "Master's Thesis, McGill University"
+  abbr: M.Sc. Thesis
+  color: "#6b46c1"
 
 TinyML Symposium:
-  name: "TinyML Symposium"
-  abbr: TinyML Symposium
-  color: "#800080"
+  name: "TinyML Research Symposium"
+  abbr: tinyML
+  color: "#0d9488"
+
+CRV:
+  name: "Conference on Computer and Robot Vision"
+  abbr: CRV
+  color: "#2563eb"
+
+STAT:
+  name: "Stat Journal (Wiley)"
+  abbr: STAT (Wiley)
+  url: "https://onlinelibrary.wiley.com/journal/20491573"
+  color: "#0284c7"
+
+arXiv:
+  name: "arXiv Preprint"
+  abbr: arXiv
+  color: "#64748b"
+
+Patent Application:
+  name: "US Patent"
+  abbr: US Patent
+  color: "#334155"
